@@ -9,7 +9,7 @@ import Contact from "./Contact";
 class Main extends Component {
     render() {
         return (
-            <div>
+            <div className="nav-container">
                     <NavComponent />
                 <HashRouter>
                     <div>
