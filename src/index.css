@@ -44,6 +44,8 @@ ul.header li a {
 .navWide {
     display: none;
     background: #111;
+    width: 100%;
+
 }
 
 navNarrow i {
@@ -90,4 +92,8 @@ navNarrow .narrowLinks a {
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
+}
+
+nav {
+    position: fixed;
 }

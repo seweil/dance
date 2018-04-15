@@ -5,7 +5,7 @@ class NavComponent extends Component {
     render() {
         return (
             <nav>
-                <div className="navWide">
+                <div className="navWide header">
                     <div className="wideDiv">
                         <a href="#">Home</a>
                         <a href="#/stuff">Stuff</a>
