@@ -17,13 +17,16 @@ class NavComponent extends Component {
                         className="fa fa-bars fa-2x"
                         onClick={this.burgerToggle}
                     />
+                
                     <div className="narrowLinks">
                         <a href="#" onClick={this.burgerToggle}>
                             Home
                         </a>
+                        <br/>
                         <a href="#/stuff" onClick={this.burgerToggle}>
                             Stuff
                         </a>
+                        <br/>
                         <a href="#/contact" onClick={this.burgerToggle}>
                             Contact
                         </a>
