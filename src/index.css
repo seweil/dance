@@ -43,6 +43,7 @@ ul.header li a {
 
 .navWide {
     display: none;
+    background: #111;
 }
 
 navNarrow i {
@@ -60,11 +61,19 @@ navNarrow .narrowLinks a {
 }
 
 @media (min-width: 480px) {
-    nav .navWide {
+    .navWide {
             display: block;
         }
-    nav    .navNarrow {
+    .navNarrow {
             display: none;
         }
     
+}
+
+.navWide a {
+    padding: 15px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
 }
