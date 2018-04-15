@@ -5,32 +5,32 @@ class NavComponent extends Component {
     render() {
         return (
             <nav>
-                <div className="navWide header">
-                    <div className="wideDiv">
-                        <a href="#">Home</a>
-                        <a href="#/stuff">Stuff</a>
-                        <a href="#/contact">Contact</a>
-                    </div>
+                <div className="navWide">
+                    <ul >
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#/stuff">Stuff</a></li>
+                        <li><a href="#/contact">Contact</a></li>
+                    </ul>
                 </div>
                 <div className="navNarrow">
                     <i
                         className="fa fa-bars fa-2x"
                         onClick={this.burgerToggle}
                     />
-                
-                    <div className="narrowLinks">
-                        <a href="#" onClick={this.burgerToggle}>
+
+                    <ul className="narrowLinks">
+                        <li><a href="#" onClick={this.burgerToggle}>
                             Home
-                        </a>
-                        <br/>
-                        <a href="#/stuff" onClick={this.burgerToggle}>
+                        </a></li>
+                        <br />
+                        <li><a href="#/stuff" onClick={this.burgerToggle}>
                             Stuff
-                        </a>
-                        <br/>
-                        <a href="#/contact" onClick={this.burgerToggle}>
+                        </a></li>
+                        <br />
+                        <li><a href="#/contact" onClick={this.burgerToggle}>
                             Contact
-                        </a>
-                    </div>
+                        </a></li>
+                    </ul>
                 </div>
             </nav>
         );

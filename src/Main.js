@@ -10,9 +10,7 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <navbar>
                     <NavComponent />
-                    </navbar>
                 <HashRouter>
                     <div>
                         <h1>Simple SPA</h1>

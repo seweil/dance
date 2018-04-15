@@ -1,6 +1,6 @@
 body {
     background-color: #FFCC00;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     margin: 0;
 }
 
@@ -46,6 +46,17 @@ ul.header li a {
     background: #111;
     width: 100%;
 
+}
+.navWide ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navWide li {
+    float: left;
 }
 
 navNarrow i {
@@ -96,4 +107,9 @@ navNarrow .narrowLinks a {
 
 nav {
     position: fixed;
+    width: 100%;
+
+display: block;
+height: 70px;
+background: rgb(40, 29, 59);
 }
