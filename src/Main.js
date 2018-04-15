@@ -12,7 +12,7 @@ class Main extends Component {
             <div>
                 Hi
                 <navbar>
-                    {ReactDOM.render(<NavComponent />, document.querySelector('navbar'))}
+                    <NavComponent />
                     </navbar>
                 <HashRouter>
                     <div>
