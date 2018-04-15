@@ -40,3 +40,31 @@ ul.header li a {
 .content li {
     margin-bottom: 10px;
 }
+
+.navWide {
+    display: none;
+}
+
+navNarrow i {
+    float: left;
+}
+
+navNarrow .narrowLinks {
+    display: none;
+}
+
+navNarrow .narrowLinks a {
+    display: block;
+    float: left;
+    clear: left;
+}
+
+@media (min-width: 480px) {
+    nav .navWide {
+            display: block;
+        }
+    nav    .navNarrow {
+            display: none;
+        }
+    
+}
