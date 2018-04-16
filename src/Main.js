@@ -14,6 +14,39 @@ class Main extends Component {
                 <HashRouter>
                     <div>
                         <h1>Simple SPA</h1>
+                        <nav>
+                <div className="navWide">
+                    <ul >
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#/stuff">Stuff</a></li>
+                        <li><a href="#/contact">Contact</a></li>
+                        <li>
+                                <NavLink to="/stuff">Stuff</NavLink>
+                            </li>
+                
+                    </ul>
+                </div>
+                <div className="navNarrow">
+                    <i
+                        className="fa fa-bars fa-2x"
+                        onClick={this.burgerToggle}
+                    />
+
+                    <ul className="narrowLinks">
+                        <li><a href="#" onClick={this.burgerToggle}>
+                            Home
+                        </a></li>
+                        <br />
+                        <li><a href="#/stuff" onClick={this.burgerToggle}>
+                            Stuff
+                        </a></li>
+                        <br />
+                        <li><a href="#/contact" onClick={this.burgerToggle}>
+                            Contact
+                        </a></li>
+                    </ul>
+                </div>
+            </nav>
                         <ul className="header">
                             <li>
                                 <NavLink to="/">Home</NavLink>
