@@ -8,19 +8,15 @@ import Contact from "./Contact";
 class Main extends Component {
     render() {
         return (
-            <div className="nav-container">
+            <div >
                 <HashRouter>
-                    <div>
+                    <div className="page-container">
                         <nav>
                             <div className="navWide">
                                 <ul >
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#/stuff">Stuff</a></li>
-                                    <li><a href="#/contact">Contact</a></li>
-                                    <li>
-                                        <NavLink to="/stuff">Stuff</NavLink>
-                                    </li>
-
+                                    <li><NavLink to="/">Home</NavLink></li>
+                                    <li><NavLink to="/stuff">Stuff</NavLink></li>
+                                    <li><NavLink to="/contact">Contact</NavLink></li>
                                 </ul>
                             </div>
                             <div className="navNarrow">
@@ -44,17 +40,7 @@ class Main extends Component {
                                 </ul>
                             </div>
                         </nav>
-                        <ul className="header">
-                            <li>
-                                <NavLink to="/">Home</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/stuff">Stuff</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/contact">Contact</NavLink>
-                            </li>
-                        </ul>
+                        
                         <div className="content">
                             <Route exact path="/" component={Home} />
                             <Route path="/stuff" component={Stuff} />
