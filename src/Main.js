@@ -24,8 +24,8 @@ class Main extends Component {
                                     className="fa fa-bars fa-2x"
                                     onClick={this.burgerToggle}
                                 />
-
-                                <ul className="narrowLinks">
+                                <div  className="narrowLinks">
+                                <ul>
                                     <li><a href="#" onClick={this.burgerToggle}>
                                         Home
                                     </a></li>
@@ -38,6 +38,7 @@ class Main extends Component {
                                         Contact
                                     </a></li>
                                 </ul>
+                                </div>
                             </div>
                         </nav>
                         

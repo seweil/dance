@@ -112,10 +112,8 @@ navNarrow .narrowLinks {
 }
 
 .narrowLinks {
-    position: absolute;
     background: #111;
-    display: none;
-    /* toggles */
+    display: none;     /* toggles */
 }
 
 .narrowLinks a {
