@@ -8,7 +8,11 @@ body {
     position: absolute;
 }
 
-h1, h2, p, ul, li {
+h1,
+h2,
+p,
+ul,
+li {
     font-family: sans-serif;
 }
 
@@ -49,8 +53,8 @@ ul.header li a {
     display: none;
     background: #111;
     width: 100%;
-
 }
+
 .navWide ul {
     list-style-type: none;
     margin: 0;
@@ -79,12 +83,11 @@ navNarrow .narrowLinks a {
 
 @media (min-width: 480px) {
     .navWide {
-            display: block;
-        }
+        display: block;
+    }
     .navNarrow {
-            display: none;
-        }
-    
+        display: none;
+    }
 }
 
 .navWide a {
@@ -98,7 +101,8 @@ navNarrow .narrowLinks a {
 .narrowLinks {
     position: absolute;
     background: #111;
-    display: none;  /* toggles */
+    display: none;
+    /* toggles */
 }
 
 .narrowLinks a {
@@ -112,8 +116,7 @@ navNarrow .narrowLinks a {
 nav {
     position: fixed;
     width: 100%;
-
-display: block;
-height: 70px;
-background: rgb(40, 29, 59);
+    display: block;
+    height: 70px;
+    background: rgb(40, 29, 59);
 }
