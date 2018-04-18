@@ -81,6 +81,7 @@ ul.header li a {
 .navNarrow i {
     float: left;
     color: #ffffff;
+    padding: 4px;
 }
 
 navNarrow .narrowLinks {
@@ -94,6 +95,13 @@ navNarrow .narrowLinks {
     width: 100%;
 }
 
+.navNarrow ul {
+    padding: 0px;
+}
+
+.navNarrow a {
+    padding: 3px;
+}
 @media (min-width: 480px) {
     .navWide {
         display: block;
@@ -117,7 +125,7 @@ navNarrow .narrowLinks {
 }
 
 .narrowLinks a {
-    padding: 15px;
+    padding: 6px;
     color: #FFF;
     text-decoration: none;
     font-family: sans-serif;
