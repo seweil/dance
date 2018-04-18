@@ -81,7 +81,11 @@ nav {
 .navNarrow i {
     float: left;
     color: #ffffff;
-    padding: 4px;
+    padding: 3px;
+    border-color: green;
+    border: 1.5px solid;
+    border-radius: 6px;
+    margin: 5px;
 }
 
 .narrowLinks {
@@ -91,6 +95,7 @@ nav {
     width: 100%;
     background: #111;
     display: none;     /* toggles */
+    transition-timing-function: ease-in-out;
 }
 
 .navNarrow ul {
