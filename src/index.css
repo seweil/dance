@@ -94,8 +94,18 @@ nav {
     clear: left;
     width: 100%;
     background: #111;
-    display: none;     /* toggles */
-    transition-timing-function: ease-in-out;
+    transition: max-height 0.1s ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 0.1s;
+    -webkit-transition-property: max-height;
+    max-height: 0;
+    overflow: hidden;
+    height: auto;
+}
+
+.show {
+    max-height: 150px;
+    /* https://css-tricks.com/using-css-transitions-auto-dimensions/ */
 }
 
 .navNarrow ul {

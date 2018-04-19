@@ -56,11 +56,13 @@ class Main extends Component {
 
     burgerToggle() {
         let linksEl = document.querySelector(".narrowLinks");
+        linksEl.classList.toggle("show");
+        /*
         if (linksEl.style.display === "block") {
             linksEl.style.display = "none";
         } else {
             linksEl.style.display = "block";
-        }
+        } */
     }
 }
 
