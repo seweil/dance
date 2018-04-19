@@ -1,0 +1,134 @@
+body {
+    background-color: #FFCC00;
+    padding: 0px;
+    margin: 0;
+}
+
+.page-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+    font-family: sans-serif;
+}
+
+.content {
+    background-color: #FFF;
+    padding: 70px 20px 20px 20px;
+}
+
+.content h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.content li {
+    margin-bottom: 10px;
+}
+
+/* Nav bar follows */
+nav {
+    position: fixed;
+    width: 100%;
+    display: block;
+}
+
+/* Wide nav */
+.navWide {
+    display: none;
+    background: #000000;
+    width: 100%;
+    padding: 10px;
+}
+
+.navWide ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.navWide li {
+    float: left;
+}
+
+.navWide a {
+    padding: 15px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Narrow */
+.navNarrow {
+    padding: 0px;
+    float: left;
+    background: #000000;
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+/* Button */
+.navNarrow i {
+    float: left;
+    color: #ffffff;
+    padding: 3px;
+    border-color: green;
+    border: 1.5px solid;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.narrowLinks {
+    display: block;
+    float: left;
+    clear: left;
+    width: 100%;
+    background: #111;
+    transition: max-height 0.1s ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 0.1s;
+    -webkit-transition-property: max-height;
+    max-height: 0;
+    overflow: hidden;
+    height: auto;
+}
+
+.show {
+    /* NOTE: Must be manually set */
+    max-height: 150px;
+    /* https://css-tricks.com/using-css-transitions-auto-dimensions/ */
+}
+
+.navNarrow ul {
+    padding: 0px;
+}
+
+.narrowLinks a {
+    display: block;
+    padding: 6px;
+    margin: 4px;
+    border: 4px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+@media (min-width: 480px) {
+    .navWide {
+        display: block;
+    }
+    .navNarrow {
+        display: none;
+    }
+}
