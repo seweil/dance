@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 import Home from "./Home";
 import Stuff from "./Stuff";
@@ -26,17 +26,9 @@ class Main extends Component {
                                 />
                                 <div  className="narrowLinks">
                                 <ul>
-                                    <li><a href="#" onClick={this.burgerToggle}>
-                                        Home
-                                    </a></li>
-                                    <br />
-                                    <li><a href="#/stuff" onClick={this.burgerToggle}>
-                                        Stuff
-                                    </a></li>
-                                    <br />
-                                    <li><a href="#/contact" onClick={this.burgerToggle}>
-                                        Contact
-                                    </a></li>
+                                    <li><NavLink to="/" onClick={this.burgerToggle}>Home</NavLink></li>
+                                    <li><NavLink to="/stuff" onClick={this.burgerToggle}>Stuff</NavLink></li>
+                                    <li><NavLink to="/contact" onClick={this.burgerToggle}>Contact</NavLink></li>
                                 </ul>
                                 </div>
                             </div>
@@ -57,12 +49,6 @@ class Main extends Component {
     burgerToggle() {
         let linksEl = document.querySelector(".narrowLinks");
         linksEl.classList.toggle("show");
-        /*
-        if (linksEl.style.display === "block") {
-            linksEl.style.display = "none";
-        } else {
-            linksEl.style.display = "block";
-        } */
     }
 }
 

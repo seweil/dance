@@ -104,6 +104,7 @@ nav {
 }
 
 .show {
+    /* NOTE: Must be manually set */
     max-height: 150px;
     /* https://css-tricks.com/using-css-transitions-auto-dimensions/ */
 }
@@ -113,7 +114,10 @@ nav {
 }
 
 .narrowLinks a {
+    display: block;
     padding: 6px;
+    margin: 4px;
+    border: 4px;
     color: #FFF;
     text-decoration: none;
     font-family: sans-serif;
