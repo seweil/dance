@@ -7,7 +7,17 @@ import Contact from "./Contact";
 import FloorPlan2 from "./Floorplan2";
 
 class Main extends Component {
+
+
+
     render() {
+
+        let allPages = [
+            { name: "Home", path: "/", class: Home, exact: "true" },
+            { name: "Floor 2", path: "/floorplan2", class: FloorPlan2 },
+            { name: "stuff", path: "/stuff", class: Stuff },
+            { name: "contact!", path: "/contact", class: Contact }
+        ];
         return (
             <div >
                 <HashRouter>
@@ -15,10 +25,10 @@ class Main extends Component {
                         <nav>
                             <div className="navWide">
                                 <ul >
-                                    <li><NavLink to="/">Home</NavLink></li>
-                                    <li><NavLink to="/stuff">Stuff</NavLink></li>
-                                    <li><NavLink to="/contact">Contact</NavLink></li>
-                                    <li><NavLink to="/floorplan2">Floor 2</NavLink></li>
+                                    {allPages.map((page) =>
+                                        <li>
+                                            <NavLink to={page.path} key={page.path}>{page.name}</NavLink>
+                                        </li>)}
                                 </ul>
                             </div>
                             <div className="navNarrow">
@@ -26,21 +36,19 @@ class Main extends Component {
                                     className="fa fa-bars fa-2x"
                                     onClick={this.burgerToggle}
                                 />
-                                <div  className="narrowLinks">
-                                <ul>
-                                    <li><NavLink to="/" onClick={this.burgerToggle}>Home</NavLink></li>
-                                    <li><NavLink to="/stuff" onClick={this.burgerToggle}>Stuff</NavLink></li>
-                                    <li><NavLink to="/floorplan2" onClick={this.burgerToggle}>2nd floor</NavLink></li>
-                                </ul>
+                                <div className="narrowLinks">
+                                    <ul>
+                                        {allPages.map((page) =>
+                                            <li>
+                                                <NavLink to={page.path} key={page.path} onClick={this.burgerToggle}>{page.name}</NavLink>
+                                            </li>)}
+                                    </ul>
                                 </div>
                             </div>
                         </nav>
-                        
+
                         <div className="content">
-                            <Route exact path="/" component={Home} />
-                            <Route path="/stuff" component={Stuff} />
-                            <Route path="/contact" component={Contact} />
-                            <Route path="/floorplan2" component={FloorPlan2} />
+                            {allPages.map((page) => <Route exact={page.exact} path={page.path} component={page.class}/>)}
                         </div>
                     </div>
                 </HashRouter>
