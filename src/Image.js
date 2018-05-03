@@ -12,13 +12,13 @@ export default class Image extends Component {
     let defaults = {
       height: height || "500px",
       width: width || "100%",
-      backgroundColor: 'gray'
+      backgroundColor: 'off-white'
     };
 
     let important = {
       backgroundImage: `url("${src}")`,
       backgroundSize: size,
-      backgroundPosition: 'center center',
+      backgroundPosition: 'top center',
       backgroundRepeat: 'no-repeat'
     };
 
