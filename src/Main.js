@@ -16,7 +16,7 @@ class Main extends Component {
             { name: "Schedule", path: "/schedule", class: DanceSchedule },
             { name: "Floor 2", path: "/floorplan2", class: FloorPlan2 },
             { name: "Floor 3", path: "/floorplan3", class: FloorPlan3 },
-            { name: "contact!", path: "/contact", class: Contact }
+            { name: "Contact us", path: "/contact", class: Contact }
         ];
         return (
             <div >
