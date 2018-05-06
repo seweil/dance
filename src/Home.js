@@ -4,7 +4,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h2>Welcome to Circle Back to Seattle</h2>
+                <h2>Welcome to Circle Back to Seattle!</h2>
                 <h3>Fast facts</h3>
                 <ul>
                     <li>
