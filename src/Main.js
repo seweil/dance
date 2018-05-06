@@ -2,11 +2,22 @@ import React, { Component } from "react";
 // import ReactDOM from "react-dom";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 import Home from "./Home";
-import Stuff from "./Stuff";
+import DanceSchedule from "./danceSchedule";
 import Contact from "./Contact";
+import FloorPlan2 from "./Floorplan2";
+import FloorPlan3 from "./Floorplan3";
 
 class Main extends Component {
+
     render() {
+
+        let allPages = [
+            { name: "Home", path: "/", class: Home, exact: "true" },
+            { name: "Schedule", path: "/schedule", class: DanceSchedule },
+            { name: "Floor 2", path: "/floorplan2", class: FloorPlan2 },
+            { name: "Floor 3", path: "/floorplan3", class: FloorPlan3 },
+            { name: "Contact us", path: "/contact", class: Contact }
+        ];
         return (
             <div >
                 <HashRouter>
@@ -14,9 +25,10 @@ class Main extends Component {
                         <nav>
                             <div className="navWide">
                                 <ul >
-                                    <li><NavLink to="/">Home</NavLink></li>
-                                    <li><NavLink to="/stuff">Stuff</NavLink></li>
-                                    <li><NavLink to="/contact">Contact</NavLink></li>
+                                    {allPages.map((page) =>
+                                        <li>
+                                            <NavLink to={page.path} key={page.path}>{page.name}</NavLink>
+                                        </li>)}
                                 </ul>
                             </div>
                             <div className="navNarrow">
@@ -24,20 +36,19 @@ class Main extends Component {
                                     className="fa fa-bars fa-2x"
                                     onClick={this.burgerToggle}
                                 />
-                                <div  className="narrowLinks">
-                                <ul>
-                                    <li><NavLink to="/" onClick={this.burgerToggle}>Home</NavLink></li>
-                                    <li><NavLink to="/stuff" onClick={this.burgerToggle}>Stuff</NavLink></li>
-                                    <li><NavLink to="/contact" onClick={this.burgerToggle}>Contact</NavLink></li>
-                                </ul>
+                                <div className="narrowLinks">
+                                    <ul>
+                                        {allPages.map((page) =>
+                                            <li>
+                                                <NavLink to={page.path} key={page.path} onClick={this.burgerToggle}>{page.name}</NavLink>
+                                            </li>)}
+                                    </ul>
                                 </div>
                             </div>
                         </nav>
-                        
+
                         <div className="content">
-                            <Route exact path="/" component={Home} />
-                            <Route path="/stuff" component={Stuff} />
-                            <Route path="/contact" component={Contact} />
+                            {allPages.map((page) => <Route exact={page.exact} path={page.path} component={page.class}/>)}
                         </div>
                     </div>
                 </HashRouter>
