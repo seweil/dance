@@ -31,12 +31,13 @@ class Main extends Component {
                                         </li>)}
                                 </ul>
                             </div>
-                            <div className="navNarrow" onClick={this.burgerToggle}>
-                                <i
-                                    className="fa fa-bars fa-2x"
-                                    onClick={this.burgerToggle}
-                                />
-                                <span className="navNarrowMenu">Menu</span>
+                            <div className="navNarrow">
+                                <div onClick={this.burgerToggle}>
+                                    <i
+                                        className="fa fa-bars fa-2x"
+                                    />
+                                    <span className="navNarrowMenu">Menu</span>
+                                </div>
                                 <div className="narrowLinks">
                                     <ul>
                                         {allPages.map((page) =>
