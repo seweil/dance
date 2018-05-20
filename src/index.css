@@ -2,6 +2,7 @@ body {
     background-color: #FFCC00;
     padding: 0px;
     margin: 0;
+    font-family: sans-serif;
 }
 
 .page-container {
@@ -95,6 +96,19 @@ nav {
     border: 1.5px solid;
     border-radius: 6px;
     margin: 5px;
+}
+.navNarrowMenu {
+    padding: 15px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+
+    border-width: 1px;
+    padding: 3px;
+    margin: 10px 2px;
+    display: inline-block;
 }
 
 .narrowLinks {

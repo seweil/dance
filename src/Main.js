@@ -12,7 +12,7 @@ class Main extends Component {
     render() {
 
         let allPages = [
-            { name: "Home", path: "/", class: Home, exact: "true" },
+            { name: "Home", path: "/", class: Home, exact: true },
             { name: "Schedule", path: "/schedule", class: DanceSchedule },
             { name: "Floor 2", path: "/floorplan2", class: FloorPlan2 },
             { name: "Floor 3", path: "/floorplan3", class: FloorPlan3 },
@@ -26,20 +26,21 @@ class Main extends Component {
                             <div className="navWide">
                                 <ul >
                                     {allPages.map((page) =>
-                                        <li>
+                                        <li key={page.path}>
                                             <NavLink to={page.path} key={page.path}>{page.name}</NavLink>
                                         </li>)}
                                 </ul>
                             </div>
-                            <div className="navNarrow">
+                            <div className="navNarrow" onClick={this.burgerToggle}>
                                 <i
                                     className="fa fa-bars fa-2x"
                                     onClick={this.burgerToggle}
                                 />
+                                <span className="navNarrowMenu">Menu</span>
                                 <div className="narrowLinks">
                                     <ul>
                                         {allPages.map((page) =>
-                                            <li>
+                                            <li key={page.path}>
                                                 <NavLink to={page.path} key={page.path} onClick={this.burgerToggle}>{page.name}</NavLink>
                                             </li>)}
                                     </ul>
@@ -48,7 +49,7 @@ class Main extends Component {
                         </nav>
 
                         <div className="content">
-                            {allPages.map((page) => <Route exact={page.exact} path={page.path} component={page.class}/>)}
+                            {allPages.map((page) => <Route exact={page.exact} path={page.path} component={page.class} key={page.path}/>)}
                         </div>
                     </div>
                 </HashRouter>

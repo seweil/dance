@@ -27,6 +27,8 @@ Phone:  206-292-9500
                     <b>Fun Badge Tour</b><br/>
                     Sun July 8
                 </ul>
+                <br/>
+                <p>Updated { new Date().toLocaleString()}</p>                
             </div>
         );
     }
