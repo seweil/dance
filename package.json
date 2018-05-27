@@ -1,6 +1,6 @@
 {
-  "name": "cbts33",
-  "version": "0.1.0",
+  "name": "cbts",
+  "version": "0.2.0",
   "private": true,
   "homepage": "http://seweil.github.io/cbts",
   "dependencies": {
