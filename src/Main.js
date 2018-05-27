@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 // import ReactDOM from "react-dom";
 import { Route, NavLink, HashRouter } from "react-router-dom";
+import ReactGA from 'react-ga';
+
+
 import Home from "./Home";
 import DanceSchedule from "./danceSchedule";
 import Contact from "./Contact";
 import FloorPlan2 from "./Floorplan2";
 import FloorPlan3 from "./Floorplan3";
+
+ReactGA.initialize('UA-119866125-1', { "debug": true });
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class Main extends Component {
 

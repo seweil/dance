@@ -1,7 +1,11 @@
 import React, { Component } from "react";
+import ReactGA from 'react-ga';
 
 class Home extends Component {
     render() {
+        ReactGA.set({ "page": "Home"});
+        ReactGA.pageview("/Home");
+        
         return (
             <div>
                 <h2>Welcome to Circle Back to Seattle!</h2>
@@ -28,7 +32,7 @@ Phone:  206-292-9500
                     Sun July 8
                 </ul>
                 <br/>
-                <p>Updated: Sat May 26 22:32:44 DST 2018</p>                
+                <p>Updated: Sun May 27 09:37:44 DST 2018</p>                
             </div>
         );
     }
