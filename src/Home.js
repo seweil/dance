@@ -28,7 +28,7 @@ Phone:  206-292-9500
                     Sun July 8
                 </ul>
                 <br/>
-                <p>Updated: Mon May 21 22:57:49 DST 2018</p>                
+                <p>Updated: Sat May 26 22:05:14 DST 2018</p>                
             </div>
         );
     }

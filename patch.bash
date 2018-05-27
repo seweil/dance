@@ -1,4 +1,3 @@
-#!/bin/bash
 echo Updating date2
 SRC="src/Home.js"
 TEMP_FILE="_tmp"
