@@ -2,15 +2,15 @@
   "name": "cbts33",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://seweil.github.io/cbts3",
+  "homepage": "http://seweil.github.io/cbts",
   "dependencies": {
     "ajv": "^6.5.0",
     "gh-pages": "^1.1.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
-    "serve": "^6.5.7"
+    "serve": "^6.5.8"
   },
   "scripts": {
     "start": "react-scripts start",
