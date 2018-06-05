@@ -3,9 +3,14 @@
   "name": "Circle Back to Seattle",
   "icons": [
     {
-      "src": "favicon.png",
-      "sizes": "792x788",
+      "src": "public/favicon.png",
+      "sizes": "784x784",
       "type": "image/png"
+    },
+    {
+        "src": "public/favicon-180.png",
+        "sizes": "180x180",
+        "type": "image/png"
     }
   ],
   "start_url": "./index.html",
