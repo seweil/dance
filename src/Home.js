@@ -29,10 +29,10 @@ Phone:  206-292-9500
                         Thurs July 5 - Sat July 7
                     </li>
                     <b>Fun Badge Tour</b><br/>
-                    Sun July 8
+                    Sun July 8 - be there!
                 </ul>
                 <br/>
-                <p>Updated: Tue Jun  5 16:55:21 PDT 2018</p>                
+                <p>Updated: Tue Jun  5 17:10:05 PDT 2018</p>                
             </div>
         );
     }
