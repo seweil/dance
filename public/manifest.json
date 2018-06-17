@@ -13,12 +13,12 @@
       "type": "image/png"
     },
     {
-      "src": "public/favicon-192.png",
+      "src": "static/media/favicon-192.72438237.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "public/favicon-512.png",
+      "src": "static/media/favicon-512.5c9937dc.png",
       "sizes": "512x512",
       "type": "image/png"
     },
