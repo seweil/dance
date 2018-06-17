@@ -3,48 +3,13 @@
   "name": "Circle Back to Seattle",
   "icons": [
     {
-      "src": "public/favicon.png",
-      "sizes": "784x784",
-      "type": "image/png"
-    },
-    {
-      "src": "public/favicon-180.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    },
-    {
-      "src": "public/favicon-192.png",
+      "src": "static/media/favicon-192.72438237.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "public/favicon-512.png",
+      "src": "static/media/favicon-512.5c9937dc.png",
       "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "public/favicon-128.png",
-      "sizes": "128x128",
-      "type": "image/png"
-    },
-    {
-      "src": "public/favicon-32.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "public/favicon-120.png",
-      "sizes": "120x120",
-      "type": "image/png"
-    },
-    {
-      "src": "public/favicon-76.png",
-      "sizes": "76x76",
-      "type": "image/png"
-    },
-    {
-      "src": "public/favicon-152.png",
-      "sizes": "152x152",
       "type": "image/png"
     }
   ],
