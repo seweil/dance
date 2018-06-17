@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "./patch.bash && react-scripts build",
+    "build": "sed -i.bak \"s-<p>Updated: .*</p>-<p>Updated: `date`</p>-\" src/Home.js && react-scripts build",
+    "build2": "./patch.bash && react-scripts build",
     "publish": "rm -rf docs && mv build docs && echo Dont forget to push",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
