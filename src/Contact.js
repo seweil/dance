@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import ReactGA from 'react-ga';
 
+import Image from "./Image";
+import logo512 from "./assets/favicon-512.png";
+
 class Contact extends Component {
     render() {
         ReactGA.set({ "page": "Contact us"});
@@ -11,6 +14,7 @@ class Contact extends Component {
                 <p>
                     Contact us here
                 </p>
+                <Image src={logo512} mode='fit'/>
             </div>
         );
     }
