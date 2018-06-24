@@ -4,13 +4,20 @@ import ReactGA from 'react-ga';
 import './generatedStyles.css';
 import htmlSchedule from "./html/Schedule.html";
 
-var modifyClassNames = (function(selector, className, add) {
-    var items = document.getElementsByClassName(selector);
-    for (var i = 0; i < items.length; i++ ){
-        if (add) {
-            items[i].classList.add(className);
-        } else {
-            items[i].classList.remove(className);
+var modifyClassNames = (function(selectorList, className, add) {
+    if (! Array.isArray(selectorList)) {
+        selectorList = [selectorList];
+    }
+
+    for (var selectorIndex = 0; selectorIndex < selectorList.length; selectorIndex++) {
+        var selector = selectorList[selectorIndex];
+        var items = document.getElementsByClassName(selector);
+        for (var i = 0; i < items.length; i++) {
+            if (add) {
+                items[i].classList.add(className);
+            } else {
+                items[i].classList.remove(className);
+            }
         }
     }
 });
@@ -23,8 +30,8 @@ class DanceSchedule extends Component {
         const value = !target.checked;
         console.log("Changed", event, value);
 
-        modifyClassNames("GCA", "hidden", value);
-        modifyClassNames("GCA-squeeze", "hidden", value);
+        modifyClassNames(["GCA", "GCA-squeeze"], "hidden", value);
+        // modifyClassNames("GCA-squeeze", "hidden", value);
 /*
         var selects = document.getElementsByClassName("GCA");
         for(var i =0, il = selects.length;i<il;i++){
