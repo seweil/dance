@@ -80,6 +80,7 @@ class DanceSchedule extends Component {
             min,
             max
         }
+        console.log("Read from storage", this.state);
     }
 
     gcaChanged(event) {
@@ -121,6 +122,7 @@ class DanceSchedule extends Component {
         modifyAttribute("Merged", "colspan", spanCount);
 
         localStorage.setItem(this.rangeKey, JSON.stringify({ min, max }));
+        console.log("Storing range", min, max);
     }
 
 
@@ -157,7 +159,7 @@ class DanceSchedule extends Component {
                             max={7}
                             marks={marks}
                             defaultValue={[this.state.min, this.state.max]}
-                            onChange={this.rangeChanged}
+                            onChange={this.rangeChanged.bind(this)}
                         />
                     </div>
                     <br /><br />

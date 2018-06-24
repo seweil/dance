@@ -32,7 +32,7 @@ Phone:  206-292-9500
                     Sun July 8 - be there!
                 </ul>
                 <br/>
-                <p>Updated: Sun Jun 24 11:38:35 DST 2018</p>                
+                <p>Updated: Sun Jun 24 13:01:13 DST 2018</p>                
             </div>
         );
     }
