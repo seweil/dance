@@ -48,6 +48,14 @@ class DanceSchedule extends Component {
         modifyClassNames(["GCA", "GCA-squeeze"], "hidden", value);
     }
 
+    specialtyChanged(event) {
+        const target = event.target;
+        const value = !target.checked;
+        console.log("Changed", event, value);
+
+        modifyClassNames(["Specialty", "hideWithSpecialty"], "hidden", value);
+    }
+
     rangeChanged(values) {
         console.log("Range changed", values);
         var min = values[0];
@@ -74,19 +82,26 @@ class DanceSchedule extends Component {
             <div>
              <div className="CalendarControls">
                 <h2>Dance Schedule</h2>
-                <div>
+                <span>
                     <input type="checkbox" id="showGca" onChange= {this.gcaChanged} defaultChecked={ true }/>
                     <label htmlFor="showGca">Show GCA</label>
-                </div>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span>
+                    <input type="checkbox" id="showSpecialty" onChange= {this.specialtyChanged} defaultChecked={ true }/>
+                    <label htmlFor="showSpecialty">Show Specialty</label>
+                </span>
                 <br/>
-                <Range
-                    allowCross={ false}
-                    min={ 0 }
-                    max={ 6 }
-                    marks={ marks }
-                    defaultValue= { [0, 6] }
-                    onChange={ this.rangeChanged }
-                />
+                <div className="rangeContainer">
+                    <Range
+                        allowCross={ false}
+                        min={ 0 }
+                        max={ 6 }
+                        marks={ marks }
+                        defaultValue= { [0, 6] }
+                        onChange={ this.rangeChanged }
+                    />
+                </div>
                 <br/><br/>
 </div>
 

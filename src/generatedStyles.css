@@ -208,7 +208,7 @@ td.C4 {
 td.Header {
 	background-color:#e6e7e8;
 }
-td.MS, td.Specialty {
+td.MS, td.Specialty, td.Green {
 	background-color:#bce0c1;
 	border-bottom-color:#9b9da0;
 	border-bottom-style:solid;
@@ -246,6 +246,7 @@ td.Merged {
 	padding-right:0px;
 	padding-top:5px;
 	vertical-align:top;
+	text-align: center;
 }
 td.Plus {
 	background-color:#b6e4fa;
@@ -268,7 +269,6 @@ td.Plus {
 	vertical-align:top;
 }
 td.Rooms {
-	text-shadow: 0 0 5px rgb(251, 255, 0);
 	border-bottom-color:#9b9da0;
 	border-bottom-style:solid;
 	border-bottom-width:1px;
@@ -402,13 +402,15 @@ p.Basic-Paragraph {
 	orphans:1;
 	page-break-after:auto;
 	page-break-before:auto;
-	text-align:left;
+	/* text-align:left;
 	text-decoration:none;
 	text-indent:0;
 	text-transform:none;
 	widows:1;
+	*/
 }
 p.Rooms {
+	text-shadow: 0 0 6px rgb(251, 255, 0);
 	color:#000000;
 	font-family:Roboto, sans-serif;
 	font-size:12px;

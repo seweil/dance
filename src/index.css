@@ -12,7 +12,11 @@ body {
 }
 
 .CalendarControls  {
-    margin: 20px
+   /* margin: 20px; */
+}
+
+.rangeContainer {
+    margin: 25px;
 }
 
 h1,
