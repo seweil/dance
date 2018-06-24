@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactGA from 'react-ga';
-
+import Range from 'rc-slider/lib/Range';
+import 'rc-slider/assets/index.css';
 import './generatedStyles.css';
 import htmlSchedule from "./html/Schedule.html";
 
@@ -31,30 +32,39 @@ class DanceSchedule extends Component {
         console.log("Changed", event, value);
 
         modifyClassNames(["GCA", "GCA-squeeze"], "hidden", value);
-        // modifyClassNames("GCA-squeeze", "hidden", value);
-/*
-        var selects = document.getElementsByClassName("GCA");
-        for(var i =0, il = selects.length;i<il;i++){
-           selects[i].className += " hidden";
-        }
+    }
 
-        var selects = document.getElementsByClassName("GCA-squeeze");
-        for(var i =0, il = selects.length;i<il;i++){
-           selects[i].className += " hidden";
-        }
-        */
+    rangeChanged(values) {
+        console.log("Range changed", values);
+        var min = values[0];
+        var max = values[1];
+
+        modifyClassNames(["MS", "hideWithMS"], "hidden", min > 0);
+        modifyClassNames(["Plus", "hideWithPlus"], "hidden", min > 1 || max < 1);
     }
 
     render() {
         ReactGA.set({ "page": "Schedule"});        
         ReactGA.pageview("/Schedule");
-        
+
+        var marks = { 0: "MS", 1: "Plus", 2: "Adv", 3: "C1", 4: "C2", 5: "C3a", 6: "C3b", 7: "C3b & C4" };
         return (
              <div>
                 <h2>Dance Schedule</h2>
                 <div>
                     <input type="checkbox" id="showGca" onChange= {this.gcaChanged} defaultChecked={ true }/>
+        
                     <label htmlFor="showGca">Show GCA</label>
+
+                                <Range
+                        allowCross={ false}
+                        min={ 0 }
+                        max={ 7 }
+                        marks={ marks }
+                        defaultValue= { [0, 7] }
+                        onChange={ this.rangeChanged }
+                    />
+                    <br/><br/>
                 </div>
 
                 <div dangerouslySetInnerHTML= { {__html: htmlSchedule }} />>

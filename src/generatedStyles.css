@@ -3,7 +3,10 @@ body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
 	padding:0;
 	border-width:0;
 }
-p.hidden {
+.dynamicTable p.hidden {
+	display:none;
+}
+.dynamicTable td.hidden {
 	display:none;
 }
 
@@ -204,7 +207,7 @@ td.C4 {
 td.Header {
 	background-color:#e6e7e8;
 }
-td.MS {
+td.MS, td.Specialty {
 	background-color:#bce0c1;
 	border-bottom-color:#9b9da0;
 	border-bottom-style:solid;
