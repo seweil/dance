@@ -55,6 +55,11 @@ class DanceSchedule extends Component {
 
         modifyClassNames(["MS", "hideWithMS"], "hidden", min > 0);
         modifyClassNames(["Plus", "hideWithPlus"], "hidden", min > 1 || max < 1);
+        modifyClassNames(["Adv", "hideWithAdv"], "hidden", min > 2 || max < 2);
+        modifyClassNames(["C1", "hideWithC1"], "hidden", min > 3 || max < 3);
+        modifyClassNames(["C2", "hideWithC2"], "hidden", min > 4 || max < 4);
+        modifyClassNames(["C3a", "hideWithC3a"], "hidden", min > 5 || max < 5);
+        modifyClassNames(["C3b", "hideWithC3b", "C4"], "hidden", min > 6 || max < 6);
 
         var spanCount = max - min + 1;
         modifyAttribute("Merged", "colspan", spanCount);
@@ -64,7 +69,7 @@ class DanceSchedule extends Component {
         ReactGA.set({ "page": "Schedule"});        
         ReactGA.pageview("/Schedule");
 
-        var marks = { 0: "MS", 1: "Plus", 2: "Adv", 3: "C1", 4: "C2", 5: "C3a", 6: "C3b", 7: "C3b & C4" };
+        var marks = { 0: "MS", 1: "Plus", 2: "Adv", 3: "C1", 4: "C2", 5: "C3a", 6: "C3b+" };
         return (
             <div>
              <div className="CalendarControls">
@@ -77,9 +82,9 @@ class DanceSchedule extends Component {
                 <Range
                     allowCross={ false}
                     min={ 0 }
-                    max={ 7 }
+                    max={ 6 }
                     marks={ marks }
-                    defaultValue= { [0, 7] }
+                    defaultValue= { [0, 6] }
                     onChange={ this.rangeChanged }
                 />
                 <br/><br/>
