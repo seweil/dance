@@ -5,18 +5,40 @@ body {
     font-family: sans-serif;
 }
 
+div.hidden {
+    display: none;
+}
+.calendarFilter  {
+    /* margin: 20px; */
+ }
+ 
 .page-container {
     position: absolute;
     top: 0;
     width: 100%;
 }
 
-.CalendarControls  {
-   /* margin: 20px; */
-}
-
 .rangeContainer {
     margin: 25px;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.levelContainer .rc-slider-track {
+    height: 7px;
+}
+.dateContainer .rc-slider-track {
+    display:none;
+}
+.dateContainer .rc-slider-dot.active {
+    border-color: #e9e9e9;
+}
+
+.dateContainer .rc-slider-dot-active {
+    border-color: #e9e9e9;
+}
+.rangeContainer .rc-slider-mark {
+    font-size: 14px;
 }
 
 h1,

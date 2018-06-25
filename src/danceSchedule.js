@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactGA from 'react-ga';
-import Range from 'rc-slider/lib/Range';
+import Slider, { Range } from 'rc-slider';
+// import Range from 'rc-slider/lib/Range';
 import 'rc-slider/assets/index.css';
 import './generatedStyles.css';
 import htmlSchedule from "./html/Schedule.html";
@@ -45,35 +46,35 @@ class DanceSchedule extends Component {
     constructor(props) {
         super(props);
 
-         // Defaults
-         var min = 1;
-         var max = 7;
-         var showGca = true;
-         var showSpecialty = true;
- 
-         // Read saved values
-         if (localStorage) {
-             var savedRangeString = localStorage.getItem(this.rangeKey);
-             if (savedRangeString) {
-                 var savedRange = JSON.parse(savedRangeString);
-                 if (savedRange && savedRange.min && savedRange.max) {
-                     min = savedRange.min;
-                     max = savedRange.max;
-                 }
-             }
- 
-             var savedShowGcaString = localStorage.getItem(this.gcaKey);
-             if (savedShowGcaString) {
-                 var savedShowGca = JSON.parse(savedShowGcaString);
-                 showGca = !!savedShowGca;
-             }
+        // Defaults
+        var min = 1;
+        var max = 7;
+        var showGca = true;
+        var showSpecialty = true;
 
-             var savedShowSpecialtyString = localStorage.getItem(this.specialtyKey);
-             if (savedShowSpecialtyString) {
-                 var savedShowSpecialty = JSON.parse(savedShowSpecialtyString);
-                 showSpecialty = !!savedShowSpecialty;
-             }
-         }
+        // Read saved values
+        if (localStorage) {
+            var savedRangeString = localStorage.getItem(this.rangeKey);
+            if (savedRangeString) {
+                var savedRange = JSON.parse(savedRangeString);
+                if (savedRange && savedRange.min && savedRange.max) {
+                    min = savedRange.min;
+                    max = savedRange.max;
+                }
+            }
+
+            var savedShowGcaString = localStorage.getItem(this.gcaKey);
+            if (savedShowGcaString) {
+                var savedShowGca = JSON.parse(savedShowGcaString);
+                showGca = !!savedShowGca;
+            }
+
+            var savedShowSpecialtyString = localStorage.getItem(this.specialtyKey);
+            if (savedShowSpecialtyString) {
+                var savedShowSpecialty = JSON.parse(savedShowSpecialtyString);
+                showSpecialty = !!savedShowSpecialty;
+            }
+        }
         this.state = {
             showGca,
             showSpecialty,
@@ -125,6 +126,14 @@ class DanceSchedule extends Component {
         console.log("Storing range", min, max);
     }
 
+    dateChanged(date) {
+        console.log("date changed", date);
+        modifyClassNames("filterContainer", "hidden", date === 4)
+
+        for (var aDate = 4; aDate <= 7; aDate++) {
+            modifyClassNames("dayContainer-" + aDate, "hidden", aDate !== date);
+        }
+    }
 
     componentDidMount() {
         // Update display
@@ -137,32 +146,40 @@ class DanceSchedule extends Component {
         ReactGA.set({ "page": "Schedule" });
         ReactGA.pageview("/Schedule");
 
-        var marks = { 1: "MS", 2: "Plus", 3: "Adv", 4: "C1", 5: "C2", 6: "C3a", 7: "C3b+" };
         return (
             <div>
                 <div className="CalendarControls">
                     <h2>Dance Schedule</h2>
+                    <div className="rangeContainer dateContainer">
+                        <Slider
+                            min={4}
+                            max={7}
+                            defaultValue={4}
+                            marks={{ 4: "July 4", 5: "July 5", 6: "July 6", 7: "July 7" }}
+                            onChange={this.dateChanged.bind(this)}
+                        />
+                    </div>
+                    <div className="filterContainer">
                     <span>
                         <input type="checkbox" id="showGca" onChange={this.gcaChanged.bind(this)} defaultChecked={this.state.showGca} />
                         <label htmlFor="showGca">Show GCA</label>
                     </span>
-                    &nbsp;&nbsp;&nbsp;
-                <span>
+                    <span>
                         <input type="checkbox" id="showSpecialty" onChange={this.specialtyChanged.bind(this)} defaultChecked={this.state.showSpecialty} />
                         <label htmlFor="showSpecialty">Show Specialty</label>
                     </span>
                     <br />
-                    <div className="rangeContainer">
+                    <div className="rangeContainer levelContainer">
                         <Range
                             allowCross={false}
                             min={1}
                             max={7}
-                            marks={marks}
+                            marks={{ 1: "MS", 2: "Plus", 3: "Adv", 4: "C1", 5: "C2", 6: "C3a", 7: "C3b+" }}
                             defaultValue={[this.state.min, this.state.max]}
                             onChange={this.rangeChanged.bind(this)}
                         />
                     </div>
-                    <br /><br />
+                    </div>
                 </div>
 
                 <div dangerouslySetInnerHTML={{ __html: htmlSchedule }} />>
