@@ -48,18 +48,6 @@ td.Basic-Table {
 }
 td.Adv {
 	background-color:#beb5cc;
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
 	padding-bottom:4px;
 	padding-left:1px;
 	padding-right:0px;
@@ -68,18 +56,6 @@ td.Adv {
 }
 td.Blank {
 	background-color:#d3d5d6;
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
 	padding-bottom:4px;
 	padding-left:1px;
 	padding-right:0px;
@@ -107,18 +83,6 @@ td.Body {
 }
 td.C1 {
 	background-color:#fffac2;
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
 	padding-bottom:4px;
 	padding-left:1px;
 	padding-right:0px;
@@ -127,18 +91,6 @@ td.C1 {
 }
 td.C2 {
 	background-color:#f9c7dd;
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
 	padding-bottom:4px;
 	padding-left:1px;
 	padding-right:0px;
@@ -147,18 +99,6 @@ td.C2 {
 }
 td.C3a {
 	background-color:#f9b29d;
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
 	padding-bottom:4px;
 	padding-left:1px;
 	padding-right:0px;
@@ -167,18 +107,6 @@ td.C3a {
 }
 td.C3b {
 	background-color:#f58768;
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#000000;
-	border-right-style:solid;
-	border-right-width:2px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
 	padding-bottom:4px;
 	padding-left:1px;
 	padding-right:0px;
@@ -187,18 +115,6 @@ td.C3b {
 }
 td.C4 {
 	background-color:#f15f46;
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#000000;
-	border-right-style:solid;
-	border-right-width:2px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
 	padding-bottom:4px;
 	padding-left:1px;
 	padding-right:0px;
@@ -210,18 +126,6 @@ td.Header {
 }
 td.MS, td.Specialty, td.Green {
 	background-color:#bce0c1;
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
 	padding-bottom:4px;
 	padding-left:1px;
 	padding-right:0px;
@@ -229,18 +133,6 @@ td.MS, td.Specialty, td.Green {
 	vertical-align:top;
 }
 td.Merged {
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
 	padding-bottom:5px;
 	padding-left:1px;
 	padding-right:0px;
@@ -250,18 +142,6 @@ td.Merged {
 }
 td.Plus {
 	background-color:#b6e4fa;
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
 	padding-bottom:4px;
 	padding-left:1px;
 	padding-right:0px;
@@ -269,18 +149,6 @@ td.Plus {
 	vertical-align:top;
 }
 td.Rooms {
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
 	padding-bottom:5px;
 	padding-left:1px;
 	padding-right:0px;
@@ -478,58 +346,7 @@ span.joinedDetails {
 	font-style:normal;
 	font-weight:normal;
 }
-td._idGenCellOverride-1 {
-	border-top-color:#000000;
-	border-top-style:solid;
-	border-top-width:1px;
-}
-td._idGenCellOverride-2 {
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-}
-td._idGenCellOverride-3 {
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
-}
-td._idGenCellOverride-4 {
-	border-top-color:#9b9da0;
-	border-top-style:solid;
-	border-top-width:1px;
-}
-td._idGenCellOverride-5 {
-	border-left-color:#000000;
-	border-left-style:solid;
-	border-left-width:2px;
-}
-td._idGenCellOverride-6 {
-	border-left-color:#9b9da0;
-	border-left-style:solid;
-	border-left-width:1px;
-}
-td._idGenCellOverride-7 {
-	border-bottom-color:#9b9da0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-}
-td._idGenCellOverride-8 {
-	border-right-color:#9b9da0;
-	border-right-style:solid;
-	border-right-width:1px;
-	border-top-color:#000000;
-	border-top-style:solid;
-	border-top-width:1px;
-}
+
 col._idGenTableRowColumn-1 {
 	width:146px;
 }
