@@ -5,6 +5,12 @@ body {
     font-family: sans-serif;
 }
 
+span label {
+    margin-right:20px;
+}
+span input {
+    margin-left: 20px;
+}
 div.hidden {
     display: none;
 }

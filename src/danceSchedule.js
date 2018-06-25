@@ -42,6 +42,7 @@ class DanceSchedule extends Component {
     rangeKey = "range";
     gcaKey = "showGca"
     specialtyKey = "showSpecialty";
+    dateKey = "date";
 
     constructor(props) {
         super(props);
@@ -51,6 +52,7 @@ class DanceSchedule extends Component {
         var max = 7;
         var showGca = true;
         var showSpecialty = true;
+        var date = 4;
 
         // Read saved values
         if (localStorage) {
@@ -74,12 +76,19 @@ class DanceSchedule extends Component {
                 var savedShowSpecialty = JSON.parse(savedShowSpecialtyString);
                 showSpecialty = !!savedShowSpecialty;
             }
+
+            var savedDateString = localStorage.getItem(this.dateKey);
+            if (savedDateString) {
+                var savedDate = JSON.parse(savedDateString);
+                date = savedDate;
+            }
         }
         this.state = {
             showGca,
             showSpecialty,
             min,
-            max
+            max,
+            date
         }
         console.log("Read from storage", this.state);
     }
@@ -133,6 +142,7 @@ class DanceSchedule extends Component {
         for (var aDate = 4; aDate <= 7; aDate++) {
             modifyClassNames("dayContainer-" + aDate, "hidden", aDate !== date);
         }
+        localStorage.setItem(this.dateKey, JSON.stringify(date));
     }
 
     componentDidMount() {
@@ -140,6 +150,7 @@ class DanceSchedule extends Component {
         this.rangeChanged([this.state.min, this.state.max]);
         this.updateGca(this.state.showGca);
         this.updateSpecialty(this.state.showSpecialty);
+        this.dateChanged(this.state.date);
     }
 
     render() {
@@ -154,7 +165,7 @@ class DanceSchedule extends Component {
                         <Slider
                             min={4}
                             max={7}
-                            defaultValue={4}
+                            defaultValue={ this.state.date }
                             marks={{ 4: "July 4", 5: "July 5", 6: "July 6", 7: "July 7" }}
                             onChange={this.dateChanged.bind(this)}
                         />
@@ -182,7 +193,7 @@ class DanceSchedule extends Component {
                     </div>
                 </div>
 
-                <div dangerouslySetInnerHTML={{ __html: htmlSchedule }} />>
+                <div dangerouslySetInnerHTML={{ __html: htmlSchedule }} />
 
             </div>
         );

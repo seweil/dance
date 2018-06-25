@@ -409,8 +409,8 @@ p.Basic-Paragraph {
 	widows:1;
 	*/
 }
-p.Rooms {
-	text-shadow: 0 0 6px rgb(251, 255, 0);
+p.Rooms, span.Rooms {
+	text-shadow: 0 0 8px rgb(255, 255, 0);
 	color:#000000;
 	font-family:Roboto, sans-serif;
 	font-size:12px;
@@ -430,6 +430,7 @@ p.Rooms {
 	text-transform:none;
 	widows:1;
 }
+
 span.Body {
 	font-family:"Source Sans Pro", sans-serif;
 	font-size:11px;
