@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ReactGA from 'react-ga';
 
+// import Image from "./Image";
+// import logo from "./assets/favicon-192.png";
 class Home extends Component {
     render() {
         ReactGA.set({ "page": "Home"});
@@ -13,8 +15,13 @@ class Home extends Component {
                 <ul>
                     <li>
                         <b>Hotel</b><br/>
-                        <a href="https://www.paramounthotelseattle.com/">The Paramount Hotel</a>, 724 Pine Street, Seattle, WA 98101
-Phone:  206-292-9500 
+                        <a href="http://www.sheratonseattle.com/">Sheraton Seattle Hotel</a>
+                        <br/>
+                        <a href="https://www.google.com/maps/place/Sheraton+Seattle+Hotel/@47.6110957,-122.3360236,17z/data=!3m1!4b1!4m7!3m6!1s0x54906ab45f555241:0xd56f6e55dd269b72!5m1!1s2018-07-08!8m2!3d47.6110921!4d-122.333835">
+                            1400 6th Ave, Seattle, WA 98101
+                        </a>
+                        <br/>
+                        Phone:  206-292-9500 
                     </li>
                     <li>
                         <b>Caller school</b><br />
@@ -32,7 +39,20 @@ Phone:  206-292-9500
                     Sun July 8 - be there!
                 </ul>
                 <br/>
-                <p>Updated: Sun Jun 24 22:13:20 DST 2018</p>                
+
+                <h3>Install this as an app</h3>
+                <ul>
+                    <li>
+                        <b>iPhone &amp; iPad</b><br/>
+                        Touch the share icon and choose Add to Home Screen
+                    </li>
+                    <li>
+                        <b>Android</b><br/>
+                        Touch the overflow button (three vertial dots) and choose Add to Home Screen
+                    </li>
+                </ul>
+                <br/><br/>
+                <span className="finePrint"><p>Updated: Mon Jun 25 22:50:02 DST 2018</p></span>                
             </div>
         );
     }

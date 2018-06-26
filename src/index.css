@@ -47,6 +47,19 @@ div.hidden {
     font-size: 14px;
 }
 
+.finePrint {
+    font-size: 8pt;
+}
+
+.suggestLandscape {
+    margin-bottom: 5px;
+}
+@media screen and (orientation: landscape) {
+    .suggestLandscape {
+        display: none;
+    }
+}
+
 h1,
 h2,
 h3,
