@@ -30,6 +30,7 @@ div.hidden {
     margin: 25px;
     font-size: 13px;
     margin-bottom: 30px;
+    max-width: 800px;
 }
 
 .levelContainer .rc-slider-track {

@@ -7,6 +7,10 @@ class Nearby extends Component {
         ReactGA.pageview("/Nearby");
         return (
             <div>
+                <h2>Coffee</h2>
+                <ul>
+                    <li><a target="_blank"  rel="noopener noreferrer" href="https://www.google.com/maps/place/Monorail+Espresso/@47.6110624,-122.3376742,17z/data=!3m1!4b1!4m5!3m4!1s0x54906ab4ed47ba6f:0xfd9057df708636c1!8m2!3d47.6110588!4d-122.3354855">Monorail Espresso (avoid the chains)</a></li>
+                </ul>
                 <h2>Grocery</h2>
                 <ul>
                     <li><a target="_blank"  rel="noopener noreferrer" href="https://www.google.com/maps/place/Kress+IGA+Supermarket/@47.6108531,-122.334644,17.5z/data=!4m8!1m2!2m1!1sgrocery!3m4!1s0x0:0x75e296de08873831!8m2!3d47.6093959!4d-122.3378223">Kress IGA</a></li>
