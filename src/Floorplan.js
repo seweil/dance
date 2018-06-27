@@ -11,7 +11,7 @@ class FloorPlan extends Component {
         ReactGA.pageview("/FloorPlan");
         return (
             <div>
-                <span className="suggestLandscape"><i class="fas fa-sync"></i> This page looks better in landscape <i class="fas fa-sync"></i></span>
+                <div className="suggestLandscape"><i class="fas fa-sync"></i> This page looks better in landscape <i class="fas fa-sync"></i></div>
                 <h2>2nd Floor</h2>
                 <Image src={floor2} mode='fit' height={252}/>
                 <hr/>
