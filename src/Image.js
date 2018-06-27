@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+// http://blog.matthewcheok.com/a-better-img-tag/
 
 export default class Image extends Component {  
   render() {

@@ -5,6 +5,11 @@ body {
     font-family: sans-serif;
 }
 
+.imageTips {
+    max-width: 400px;
+    border: 1px solid grey;
+    margin: 5px;
+}
 span label {
     margin-right:20px;
 }
@@ -14,9 +19,6 @@ span input {
 div.hidden {
     display: none;
 }
-.calendarFilter  {
-    /* margin: 20px; */
- }
  
 .page-container {
     position: absolute;

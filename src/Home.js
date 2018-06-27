@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import ReactGA from 'react-ga';
 
+import Image from "./Image";
+import iosShare from "./assets/iosShare.png";
+import iosAdd from "./assets/iosAdd.png";
+import iosConfirm from "./assets/iosConfirm.png";
+
 // import Image from "./Image";
 // import logo from "./assets/favicon-192.png";
 class Home extends Component {
@@ -44,7 +49,10 @@ class Home extends Component {
                 <ul>
                     <li>
                         <b>iPhone &amp; iPad</b><br/>
-                        Touch the share icon and choose Add to Home Screen
+                        Touch the share icon and choose Add to Home Screen<br/>
+                        <Image src={iosShare} height={85} className="imageTips" />
+                        <Image src={iosAdd} height={300} className="imageTips" />
+                        <Image src={iosConfirm} height={300} className="imageTips" />
                     </li>
                     <li>
                         <b>Android</b><br/>
