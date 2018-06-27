@@ -8,6 +8,7 @@ import Home from "./Home";
 import DanceSchedule from "./danceSchedule";
 import Contact from "./Contact";
 import FloorPlan from "./Floorplan";
+import Nearby from "./Nearby";
 
 ReactGA.initialize('UA-119866125-1', { "debug": true });
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -20,6 +21,7 @@ class Main extends Component {
             { name: "Home", path: "/", class: Home, exact: true },
             { name: "Schedule", path: "/schedule", class: DanceSchedule },
             { name: "Floor Plan", path: "/floorplan", class: FloorPlan },
+            { name: "Nearby", path: "/nearby", class: Nearby },
             { name: "Contact us", path: "/contact", class: Contact }
         ];
         return (
