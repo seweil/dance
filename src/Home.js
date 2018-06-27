@@ -52,7 +52,7 @@ class Home extends Component {
                     </li>
                 </ul>
                 <br/><br/>
-                <span className="finePrint"><p>Updated: Mon Jun 25 22:50:02 DST 2018</p></span>                
+                <span className="finePrint"><p>Updated: Tue Jun 26 18:47:37 DST 2018</p></span>                
             </div>
         );
     }

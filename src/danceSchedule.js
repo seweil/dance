@@ -49,7 +49,7 @@ class DanceSchedule extends Component {
 
         // Defaults
         var min = 1;
-        var max = 7;
+        var max = 5;
         var showGca = true;
         var showSpecialty = true;
         var date = 4;
