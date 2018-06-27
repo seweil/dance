@@ -52,11 +52,12 @@ div.hidden {
 }
 
 .suggestLandscape {
-    margin-bottom: 5px;
+    margin: 8px 0 8px 0;
+    display: none;
 }
-@media screen and (orientation: landscape) {
+@media screen and (orientation: portrait) and (max-width: 550px) {
     .suggestLandscape {
-        display: none;
+        display: inline-block;
     }
 }
 
@@ -72,7 +73,7 @@ li {
 
 .content {
     background-color: #FFF;
-    padding: 70px 20px 20px 20px;
+    padding: 55px 20px 20px 20px;
 }
 
 .content h2 {
@@ -89,6 +90,7 @@ nav {
     position: fixed;
     width: 100%;
     display: block;
+    z-index: 3333;
 }
 
 /* Wide nav */
