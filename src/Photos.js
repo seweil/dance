@@ -9,7 +9,7 @@ class Photos extends Component {
             <div>
                 <h2>Share your convention photos</h2>
                 <p>And we will project during meals</p><br/>
-                Email to <a target="_blank"  rel="noopener noreferrer" href="mailto:starts34busy94hay@photos.flickr.com?subject=CBTS">starts34busy94hay@photos.flickr.com</a>
+                Email to <a target="_top"  rel="noopener noreferrer" href="mailto:starts34busy94hay@photos.flickr.com?subject=CBTS">starts34busy94hay@photos.flickr.com</a>
                 <p>Be sure to <i>attach</i>, not insert the image. (And please keep them clean)</p>
                 <br/>
                 <h2>View photos here</h2>
