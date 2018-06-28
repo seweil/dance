@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
 
 import Home from "./Home";
 import DanceSchedule from "./danceSchedule";
-import Contact from "./Contact";
+import Photos from "./Photos";
 import FloorPlan from "./Floorplan";
 import Nearby from "./Nearby";
 
@@ -22,7 +22,7 @@ class Main extends Component {
             { name: "Schedule", path: "/schedule", class: DanceSchedule },
             { name: "Floor Plan", path: "/floorplan", class: FloorPlan },
             { name: "Nearby", path: "/nearby", class: Nearby },
-            { name: "Contact us", path: "/contact", class: Contact }
+            { name: "Photos", path: "/photos", class: Photos }
         ];
         return (
             <div >
