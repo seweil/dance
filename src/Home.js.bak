@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import ReactGA from 'react-ga';
 
-import Image from "./Image";
+import Image1 from "./Image1";
 import iosShare from "./assets/iosShare.png";
 import iosAdd from "./assets/iosAdd.png";
 import iosConfirm from "./assets/iosConfirm.png";
+import android1 from "./assets/android1.png";
+import android2 from "./assets/android2.png";
 
 // import Image from "./Image";
 // import logo from "./assets/favicon-192.png";
@@ -50,17 +52,19 @@ class Home extends Component {
                     <li>
                         <b>iPhone &amp; iPad</b><br/>
                         Touch the share icon and choose Add to Home Screen<br/>
-                        <Image src={iosShare} height={85} className="imageTips" />
-                        <Image src={iosAdd} height={300} className="imageTips" />
-                        <Image src={iosConfirm} height={300} className="imageTips" />
+                        <Image1 src={iosShare} className="imageTips" />
+                        <Image1 src={iosAdd} className="imageTips" />
+                        <Image1 src={iosConfirm} className="imageTips" />
                     </li>
                     <li>
                         <b>Android</b><br/>
-                        Touch the overflow button (three vertial dots) and choose Add to Home Screen
+                        Touch the overflow button (three vertical dots) and choose Add to Home Screen<br/>
+                        <Image1 src={android1} maxWidth="200px" className="imageTips" />
+                        <Image1 src={android2} maxWidth="200px" className="imageTips" />
                     </li>
                 </ul>
-                <br/><br/>
-                <span className="finePrint"><p>Updated: Tue Jun 26 18:47:37 DST 2018</p></span>                
+                <br/>
+                <span className="finePrint"><p>Updated: Tue Jun 26 21:56:48 DST 2018</p></span>                
             </div>
         );
     }
