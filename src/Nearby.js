@@ -50,7 +50,7 @@ class Nearby extends Component {
                     <li><a target="_blank"  rel="noopener noreferrer" href="http://biscuitbitch.com/">Biscuit Bitch</a></li>
                 </ul>
 
-                <h2>A little further</h2>
+                <h2>A little farther</h2>
                 <li>Walk or <a target="_blank"  rel="noopener noreferrer" href="https://www.soundtransit.org/Schedules/Link-light-rail">LINK</a> to the Capitol Hill station. There is all kinds of food and nightlife on Broadway.</li>
                 <li>There are many great restaurants in <a target="_blank"  rel="noopener noreferrer" href="https://www.google.com/maps/place/Belltown,+Seattle,+WA/@47.6144342,-122.3526924,15z/data=!3m1!4b1!4m5!3m4!1s0x5490154c155fe945:0xf7b9bd6cb68b49dc!8m2!3d47.6147023!4d-122.3447964">Belltown</a></li>
                 <li>Walk to <a target="_blank"  rel="noopener noreferrer" href="https://www.google.com/maps/place/Pike+Place+Market,+Seattle,+WA/@47.6097236,-122.3443816,17z/data=!3m1!4b1!4m5!3m4!1s0x54906ab2c151d6cb:0x60441d5f633e9f1c!8m2!3d47.6101359!4d-122.3420567">Pike Place Market</a></li>
