@@ -159,7 +159,7 @@ class DanceSchedule extends Component {
 
         return (
             <div>
-                <div className="suggestLandscape"><i class="fas fa-sync"></i> This page looks better in landscape <i class="fas fa-sync"></i></div>
+                <div className="suggestLandscape"><i className="fas fa-sync"></i> This page looks better in landscape <i className="fas fa-sync"></i></div>
 
                 <div className="CalendarControls">
                     <h2>Dance Schedule</h2>

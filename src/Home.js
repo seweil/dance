@@ -49,7 +49,15 @@ class Home extends Component {
                 { this.installInstructions() }
                
                 <br/>
-                <span className="finePrint"><p>Updated: Thu Jun 28 19:10:47 PDT 2018</p></span>
+
+               <h2>Feedback?</h2>
+               Let us know what you like or would suggest future conventions do differently<br/>
+               Send an email to <a target="_top"  rel="noopener noreferrer" href="mailto: cbts.talk@gmail.com"> cbts.talk@gmail.com</a>
+
+                <br/>
+                <br/>
+                <br/>
+                <span className="finePrint"><p>Updated: Thu Jun 28 22:31:00 DST 2018</p></span>
                 <span className="finePrint"><p>Details: { navigator.platform } { window.navigator.userAgent } </p></span>  
             </div>
         );
@@ -67,7 +75,10 @@ class Home extends Component {
         return <div>
             <h3>Install this web site as an app</h3><br/>
             <b>iPhone &amp; iPad</b><br/>
-            Touch the share icon and choose Add to Home Screen<br/>
+            <ul>
+            <li>Make sure this page is open in Safari (the default web browser)</li>
+            <li>Touch the share icon and choose Add to Home Screen<br/></li>
+            </ul>
             <Image1 src={iosShare} className="imageTips" /><br/>
             <Image1 src={iosAdd} className="imageTips" /><br/>
             <Image1 src={iosConfirm} className="imageTips" />
@@ -83,7 +94,10 @@ class Home extends Component {
             return <div>
                 <h3>Install this web site as an app</h3><br/>
                 <b>Android</b><br/>
-                Touch the overflow button (three vertical dots) and choose Add to Home Screen<br/>
+                <ul>
+                    <li>Make sure this page is open in Chrome (the default web browser)</li>
+                    <li>Touch the overflow button (three vertical dots) and choose Add to Home Screen</li>
+                </ul>
                 <Image1 src={android1} maxWidth="200px" className="imageTips" /><br/>
                 <Image1 src={android2} maxWidth="200px" className="imageTips" />
             </div>
