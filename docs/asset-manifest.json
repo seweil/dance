@@ -1,13 +1,14 @@
 {
   "main.css": "static/css/main.2da060c8.css",
   "main.css.map": "static/css/main.2da060c8.css.map",
-  "main.js": "static/js/main.65c02043.js",
-  "main.js.map": "static/js/main.65c02043.js.map",
+  "main.js": "static/js/main.99c8313e.js",
+  "main.js.map": "static/js/main.99c8313e.js.map",
   "static/media/2nd floor.jpg": "static/media/2nd floor.c190cfd4.jpg",
   "static/media/3rd floor.jpg": "static/media/3rd floor.c2f471a0.jpg",
   "static/media/android1.png": "static/media/android1.d50792bb.png",
   "static/media/android2.png": "static/media/android2.06889159.png",
   "static/media/iosAdd.png": "static/media/iosAdd.9fd4deb8.png",
   "static/media/iosConfirm.png": "static/media/iosConfirm.2a3f371c.png",
-  "static/media/iosShare.png": "static/media/iosShare.3c20dff6.png"
+  "static/media/iosShare.png": "static/media/iosShare.3c20dff6.png",
+  "static/media/photoSched.png": "static/media/photoSched.fb9629d9.png"
 }
