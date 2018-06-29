@@ -46,27 +46,48 @@ class Home extends Component {
                     Sun July 8 - be there!
                 </ul>
                 <br/>
-
-                <h3>Install this as an app</h3>
-                <ul>
-                    <li>
-                        <b>iPhone &amp; iPad</b><br/>
-                        Touch the share icon and choose Add to Home Screen<br/>
-                        <Image1 src={iosShare} className="imageTips" />
-                        <Image1 src={iosAdd} className="imageTips" />
-                        <Image1 src={iosConfirm} className="imageTips" />
-                    </li>
-                    <li>
-                        <b>Android</b><br/>
-                        Touch the overflow button (three vertical dots) and choose Add to Home Screen<br/>
-                        <Image1 src={android1} maxWidth="200px" className="imageTips" />
-                        <Image1 src={android2} maxWidth="200px" className="imageTips" />
-                    </li>
-                </ul>
+                { this.installInstructions() }
+               
                 <br/>
-                <span className="finePrint"><p>Updated: Wed Jun 27 22:24:56 DST 2018</p></span>                
+                <span className="finePrint"><p>Updated: Thu Jun 28 16:44:54 PDT 2018</p></span>
+                <span className="finePrint"><p>Details: { navigator.platform } { window.navigator.userAgent } </p></span>  
             </div>
         );
+    }
+
+    installInstructions() {
+        const isIos = () => {
+            const userAgent = window.navigator.userAgent.toLowerCase();
+            return /iphone|ipad|ipod/.test( userAgent );
+        }
+        // Detects if device is in standalone mode
+        const isInStandaloneModeIos = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+         
+        if (isIos() && !isInStandaloneModeIos()) {
+        return <div>
+            <h3>Install this web site as an app</h3><br/>
+            <b>iPhone &amp; iPad</b><br/>
+            Touch the share icon and choose Add to Home Screen<br/>
+            <Image1 src={iosShare} className="imageTips" /><br/>
+            <Image1 src={iosAdd} className="imageTips" /><br/>
+            <Image1 src={iosConfirm} className="imageTips" />
+        </div>
+        }
+
+        var ua = navigator.userAgent.toLowerCase();
+        var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+
+        var isInStandaloneAndroid = window.matchMedia('(display-mode: standalone)').matches;
+        
+        if (isAndroid && !isInStandaloneAndroid) {
+            return <div>
+                <h3>Install this web site as an app</h3><br/>
+                <b>Android</b><br/>
+                Touch the overflow button (three vertical dots) and choose Add to Home Screen<br/>
+                <Image1 src={android1} maxWidth="200px" className="imageTips" /><br/>
+                <Image1 src={android2} maxWidth="200px" className="imageTips" />
+            </div>
+            }
     }
 }
 

@@ -8,7 +8,7 @@ body {
 .imageTips {
     max-width: 400px;
     border: 1px solid grey;
-    margin: 5px;
+    margin: 5px 0;
 }
 span label {
     margin-right:20px;
