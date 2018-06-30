@@ -334,6 +334,9 @@ span.Specialty {
 	font-style:normal;
 	font-weight:900;
 }
+span.Big {
+	font-size:15px;
+}
 span.joined {
 	font-family:Roboto, sans-serif;
 	font-size:14px;
