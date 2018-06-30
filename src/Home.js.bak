@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactGA from 'react-ga';
+import { NavLink } from "react-router-dom";
 
 import Image1 from "./Image1";
 import iosShare from "./assets/iosShare.png";
@@ -22,17 +23,23 @@ class Home extends Component {
                 <ul>
                     <li>
                         <b>Hotel</b><br/>
-                        <a href="http://www.sheratonseattle.com/">Sheraton Seattle Hotel</a>
+                        <a target="_blank"  rel="noopener noreferrer" href="http://www.sheratonseattle.com/">Sheraton Seattle Hotel</a>
                         <br/>
-                        <a href="https://www.google.com/maps/place/Sheraton+Seattle+Hotel/@47.6110957,-122.3360236,17z/data=!3m1!4b1!4m7!3m6!1s0x54906ab45f555241:0xd56f6e55dd269b72!5m1!1s2018-07-08!8m2!3d47.6110921!4d-122.333835">
+                        <a target="_blank"  rel="noopener noreferrer" href="https://www.google.com/maps/place/Sheraton+Seattle+Hotel/@47.6110957,-122.3360236,17z/data=!3m1!4b1!4m7!3m6!1s0x54906ab45f555241:0xd56f6e55dd269b72!5m1!1s2018-07-08!8m2!3d47.6110921!4d-122.333835">
                             1400 6th Ave, Seattle, WA 98101
                         </a>
                         <br/>
                         Phone:  206-292-9500 
                     </li>
                     <li>
+                        See <a target="_blank" rel="noopener noreferrer" href="https://circlebacktoseattle.com/">circlebacktoseattle.com</a> for&nbsp;
+                        <a target="_blank"  rel="noopener noreferrer" href="https://circlebacktoseattle.com/wp-content/uploads/2018/06/Airport-to-Hotels.pdf">airport to hotel instructions</a>,&nbsp;
+                        <a target="_blank"  rel="noopener noreferrer" href="https://circlebacktoseattle.com/wp-content/uploads/2018/06/Parking-Options.pdf">parking options</a> and more.
+                    </li>
+                    <li>
                         <b>Caller school</b><br />
-                           Sat June 30 - Wed July 4 
+                           Sat June 30 - Wed July 4<br/>
+                           <i>Note: Caller shool will be in Jefferson and Issaquah</i> (not Boren) 
                     </li>
                     <li>
                         <b>Trails End Dance</b> with Ett McAtee and Bill Eyler<br/>
@@ -40,7 +47,7 @@ class Home extends Component {
                     </li>
                     <li>
                         <b>Square Dancing</b><br/>
-                        Thurs July 5 - Sat July 7
+                        <NavLink to="/schedule" key="/schedule">Thurs July 5 - Sat July 7</NavLink>
                     </li>
                     <b>Fun Badge Tour</b><br/>
                     Sun July 8 - be there!
@@ -51,13 +58,13 @@ class Home extends Component {
                 <br/>
 
                <h2>Feedback?</h2>
-               Let us know what you like or would suggest future conventions do differently<br/>
+               What do you like? What would you suggest future conventions do differently?<br/>
                Send an email to <a target="_top"  rel="noopener noreferrer" href="mailto: cbts.talk@gmail.com"> cbts.talk@gmail.com</a>
 
                 <br/>
                 <br/>
                 <br/>
-                <span className="finePrint"><p>Updated: Thu Jun 28 22:32:45 DST 2018</p></span>
+                <span className="finePrint"><p>Updated: Thu Jun 28 22:42:22 DST 2018</p></span>
                 <span className="finePrint"><p>Details: { navigator.platform } { window.navigator.userAgent } </p></span>  
             </div>
         );
