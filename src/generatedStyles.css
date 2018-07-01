@@ -10,6 +10,23 @@ body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
 	display:none;
 }
 
+
+.rangeContainer .rc-slider-handle {
+	border: solid 3px rgb(2, 79, 180);
+	color: rgb(2, 79, 180);
+	background-color: rgb(2, 79, 180);
+}
+.rangeContainer .rc-slider-track {
+	background-color: rgb(2, 79, 180);
+	height: 8px;
+    top: 3px;
+}
+.rangeContainer .rc-slider-rail {
+	background-color: rgb(161, 161, 161);
+}
+.rangeContainer .rc-slider-dot {
+	border: 2px solid rgb(161, 161, 161);
+}
 body {
 	-epub-hyphens:auto;
 	hyphens: auto;
