@@ -17,6 +17,7 @@ class FloorPlan extends Component {
                 <hr/>
                 <h2>3rd Floor</h2>
                 <Image1 src={floor3} maxWidth="500px"/>
+                <hr/>
             </div>
         );
     }
