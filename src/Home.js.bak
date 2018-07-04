@@ -16,58 +16,90 @@ class Home extends Component {
         ReactGA.set({ "page": "Home"});
         ReactGA.pageview("/Home");
         
-        return (
-            <div>
+        return <div>
                 <h2>Welcome to Circle Back to Seattle!</h2>
                 <h3>Fast facts</h3>
                 <ul>
                     <li>
-                        <b>Hotel</b><br/>
-                        <a target="_blank"  rel="noopener noreferrer" href="http://www.sheratonseattle.com/">Sheraton Seattle Hotel</a>
-                        <br/>
-                        <a target="_blank"  rel="noopener noreferrer" href="https://www.google.com/maps/place/Sheraton+Seattle+Hotel/@47.6110957,-122.3360236,17z/data=!3m1!4b1!4m7!3m6!1s0x54906ab45f555241:0xd56f6e55dd269b72!5m1!1s2018-07-08!8m2!3d47.6110921!4d-122.333835">
+                        <b>Hotel</b>
+                        <br />
+                        <a target="_blank" rel="noopener noreferrer" href="http://www.sheratonseattle.com/">
+                            Sheraton Seattle Hotel
+                        </a>
+                        <br />
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Sheraton+Seattle+Hotel/@47.6110957,-122.3360236,17z/data=!3m1!4b1!4m7!3m6!1s0x54906ab45f555241:0xd56f6e55dd269b72!5m1!1s2018-07-08!8m2!3d47.6110921!4d-122.333835">
                             1400 6th Ave, Seattle, WA 98101
                         </a>
-                        <br/>
-                        Phone:  206-292-9500 
+                        <br />
+                        Phone: 206-292-9500
                     </li>
                     <li>
-                        See <a target="_blank" rel="noopener noreferrer" href="https://circlebacktoseattle.com/">circlebacktoseattle.com</a> for&nbsp;
-                        <a target="_blank"  rel="noopener noreferrer" href="https://circlebacktoseattle.com/wp-content/uploads/2018/06/Airport-to-Hotels.pdf">airport to hotel instructions</a>,&nbsp;
-                        <a target="_blank"  rel="noopener noreferrer" href="https://circlebacktoseattle.com/wp-content/uploads/2018/06/Parking-Options.pdf">parking options</a> and more.
+                        See <a target="_blank" rel="noopener noreferrer" href="https://circlebacktoseattle.com/">
+                            circlebacktoseattle.com
+                        </a> for&nbsp;
+                        <a target="_blank" rel="noopener noreferrer" href="https://circlebacktoseattle.com/wp-content/uploads/2018/06/Airport-to-Hotels.pdf">
+                            airport to hotel instructions
+                        </a>,&nbsp;
+                        <a target="_blank" rel="noopener noreferrer" href="https://circlebacktoseattle.com/wp-content/uploads/2018/06/Parking-Options.pdf">
+                            parking options
+                        </a> and more.
                     </li>
                     <li>
-                        <b>Caller school</b><br />
-                           Sat June 30 - Wed July 4<br/>
-                           <i>Note: Caller shool will be in Jefferson and Issaquah</i> (not Boren) 
+                        <b>Thank you!</b>
+                        <br />
+                        We got the flooring set in record time
                     </li>
                     <li>
-                        <b>Trails End Dance</b> with Ett McAtee and Bill Eyler<br/>
+                        <b>Trails End Dance</b> with Ett McAtee and Bill Eyler<br />
                         Wed July 4, 7-10pm
                     </li>
                     <li>
-                        <b>Square Dancing</b><br/>
-                        <NavLink to="/schedule" key="/schedule">Thurs July 5 - Sat July 7</NavLink>
+                        <b>Square Dancing</b>
+                        <br />
+                        <NavLink to="/schedule" key="/schedule">
+                            Thurs July 5 - Sat July 7
+                        </NavLink>
                     </li>
-                    <b>Fun Badge Tour</b><br/>
-                    Sun July 8 - be there!
+                    <li>
+                        <b>Keep your clubs strong!</b>
+                        <br />
+                        Recruiting &amp; Retention meetings in Boren on Thu 11-12, Fri 11-12, and Sat 1-2. <br />
+                        Contact Brad Bruner (<a target="_top" rel="noopener noreferrer" href="mailto:brad_bruner@yahoo.com">
+                            brad_bruner@yahoo.com
+                        </a>) or Thom Dang (<a target="_top" rel="noopener noreferrer" href="mailto:tc_dang@yahoo.com">
+                            tc_dang@yahoo.com
+                        </a>) for details.
+                    </li>
+                    <li><b>Hospitality Rooms</b><br/>
+                    Women's: 2802 , Men's: 2902 (Dance hours only)
+                    </li>
+                    <li>
+                        <b>Fun Badge Tour</b>
+                        <br />
+                        Sun July 8 - be there!
+                    </li>
                 </ul>
-                <br/>
-                { this.installInstructions() }
-               
-                <br/>
-
-               <h2>Feedback?</h2>
-               What do you like? What would you suggest future conventions do differently?<br/>
-               Send an email to <a target="_top"  rel="noopener noreferrer" href="mailto: cbts.talk@gmail.com"> cbts.talk@gmail.com</a>
-
-                <br/>
-                <br/>
-                <br/>
-                <span className="finePrint"><p>Updated: Sun Jul  1 10:28:23 DST 2018</p></span>
-                <span className="finePrint"><p>Details: { navigator.platform } { window.navigator.userAgent } </p></span>  
-            </div>
-        );
+                <br />
+                {this.installInstructions()}
+                <br />
+                <h2>Feedback?</h2>
+                What do you like? What would you suggest future conventions do differently?<br />
+                Send an email to <a target="_top" rel="noopener noreferrer" href="mailto: cbts.talk@gmail.com">
+                    {" "}
+                    cbts.talk@gmail.com
+                </a>
+                <br />
+                <br />
+                <br />
+                <span className="finePrint">
+                    <p>Updated: Wed Jul 4 14:56:37 PDT 2018</p>
+                </span>
+                <span className="finePrint">
+                    <p>
+                        Details: {navigator.platform} {window.navigator.userAgent}{" "}
+                    </p>
+                </span>
+            </div>;
     }
 
     installInstructions() {
