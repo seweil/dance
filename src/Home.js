@@ -64,7 +64,7 @@ class Home extends Component {
                 <br/>
                 <br/>
                 <br/>
-                <span className="finePrint"><p>Updated: Sun Jul  1 10:28:23 DST 2018</p></span>
+                <span className="finePrint"><p>Updated: Tue Jul  3 21:35:36 PDT 2018</p></span>
                 <span className="finePrint"><p>Details: { navigator.platform } { window.navigator.userAgent } </p></span>  
             </div>
         );
