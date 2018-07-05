@@ -18,6 +18,12 @@ class Home extends Component {
         
         return <div>
                 <h2>Welcome to Circle Back to Seattle!</h2>
+                <br/>
+                <h3>Updates</h3><p>Open this app twice for the latest</p>
+                <ul>
+                    <li><b>Moonshine moved to Willow</b> (Friday @ 10pm)<br/>
+                    C1 at 10 with Todd will be in Ravenna</li>
+                </ul>
                 <h3>Fast facts</h3>
                 <ul>
                     <li>
@@ -92,7 +98,7 @@ class Home extends Component {
                 <br />
                 <br />
                 <span className="finePrint">
-                    <p>Updated: Wed Jul 4 14:56:37 PDT 2018</p>
+                    <p>Updated: Wed Jul  4 15:29:54 PDT 2018</p>
                 </span>
                 <span className="finePrint">
                     <p>
