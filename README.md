@@ -4,7 +4,7 @@
 
 - `node` version 8 or later
 
--`npm`
+- `npm`
 
 ## First time only
 - Clone the repo
