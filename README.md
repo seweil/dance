@@ -1,3 +1,23 @@
+# How to install and run this project
+
+## First time only
+- Clone the repo
+
+- `npm install` (One time only)
+
+## Develop and debug
+
+- `npm start` will start a node development server and should open a browser to http://localhost:3000
+
+## Create a development build
+
+- Coming soon
+
+# Work to be done
+See https://github.com/seweil/dance/wiki
+
+# Original creat-react-app docs follow)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
