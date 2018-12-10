@@ -1,9 +1,15 @@
 # How to install and run this project
 
+## Prerequisites
+
+- `node` version 8 or later
+
+-`npm`
+
 ## First time only
 - Clone the repo
 
-- `npm install` (One time only)
+- `npm install`
 
 ## Develop and debug
 
